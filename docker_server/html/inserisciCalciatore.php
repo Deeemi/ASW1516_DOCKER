@@ -19,7 +19,7 @@ $user = 'root';
 $password = 'asd';
 
 try {
-    $db = new PDO('pgsql:dbname=database;host=192.168.99.100;port=5432;user=postgres;password=postgres');
+    $db = new PDO('pgsql:dbname=database;host=10.10.10.20;port=5432;user=postgres;password=postgres');
 } catch (PDOException $e) {
     echo 'Connection failed: ' . $e->getMessage();
 }
